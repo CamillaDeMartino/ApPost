@@ -23,8 +23,8 @@ public class DatabaseConnection {
     private DatabaseConnection() throws SQLException {
         try {
             Class.forName( "com.mysql.cj.jdbc.Driver" );
-            String url = "jdbc:mysql://127.0.0.1:3306/smartCity";
-            this.connection = DriverManager.getConnection( url, "root", "password");
+            String url = "jdbc:mysql://127.0.0.1:3306/SmartCity";
+            this.connection = DriverManager.getConnection( url, "camilla", "camilla" );
         } catch ( ClassNotFoundException ex ) {
             System.out.println( "Database Connection Creation Failed : " + ex.getMessage() );
         }
